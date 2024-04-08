@@ -1,0 +1,93 @@
+.container {
+    background-color: #fdf0d5;
+    position: relative;
+
+
+}
+
+#head {
+    margin-top: 0;
+    position: absolute;
+    top: 130px;
+
+}
+
+
+.unOrdered {
+    list-style: none;
+    margin-top: 0;
+    /* background-color: white; */
+    height: 200px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.listItem {
+    position: relative;
+    height: fit-content;
+    border: 2px solid #003049;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#titleDivhead {
+    color: grey;
+    font-size: 1rem;
+
+
+}
+
+.titleH2 {
+    color: #003049;
+    outline: none;
+}
+
+#descDivHead {
+    color: grey;
+    font-size: 1rem;
+
+}
+
+.descDiv {
+    outline: none;
+    font-size: 1.4rem;
+
+}
+
+.dateUp {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.delete {
+    background-color: transparent;
+    border: none;
+    transition: all ease 3s;
+
+}
+
+
+
+.edit {
+    background-color: transparent;
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: none;
+}
+
+.edit:hover {
+    border-bottom: 2px solid #003049;
+}

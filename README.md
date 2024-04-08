@@ -42,3 +42,21 @@ function createLogo() {
 }
 
 createLogo()
+
+
+  const priorityDivHeading = document.createElement("h3");
+        priorityDivHeading.id = 'priorityDivHeading'
+        priorityDivHeading.textContent = 'Priority'
+
+
+        const priorityDiv = document.createElement("div");
+        priorityDiv.classList.add("priorityDiv")
+        priorityDiv.textContent = taskList[i].priority;
+        // priorityDiv.setAttribute("contenteditable", "true")
+        priorityDiv.addEventListener("blur", () => {
+            taskList[i].priority = priorityDiv.textContent
+        })
+
+        const priorityup = document.createElement("div")
+        priorityup.append(priorityDivHeading, priorityDiv)
+        priorityup.id = 'priorityup'
